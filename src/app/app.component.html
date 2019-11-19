@@ -1,7 +1,20 @@
-<h1>{{title}}</h1>
-<nav>
-  <a routerLink="/dashboard">Dashboard</a>
-  <a routerLink="/heroes">Heroes</a>
-</nav>
-<router-outlet></router-outlet>
-<app-messages></app-messages>
+<div class="mat-typography wrapper">
+
+  <header>
+    <nav>
+      <a mat-button routerLink="/dashboard">Dashboard</a>
+      <a mat-button routerLink="/heroes">Heroes</a>
+    </nav>
+
+    <h1 mat-h1>{{title}}</h1>
+  </header>
+
+  <section class="left">
+    <router-outlet></router-outlet>
+  </section>
+
+  <section class="right">
+    <app-messages></app-messages>
+  </section>
+
+</div>
